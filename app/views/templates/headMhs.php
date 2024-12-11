@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="<?=BASEIMG?>/logo_SIPPMA.png">
     <title>SIPPMA</title>
-    <link rel="stylesheet" href="<?= BASECSS?>/adminGlobal.css">
-    <link rel="stylesheet" href="<?= BASECSS?>/styleIndexMahasiswa.css">
-    <link rel="stylesheet" href="<?= BASECSS?>/styleInputPrestasi.css">
-    <link rel="stylesheet" href="<?= BASECSS?>/styleFormInput.css">
-    <link rel="stylesheet" href="<?= BASECSS?>/styleProfilMahasiswa.css">
-    <link rel="stylesheet" href="<?= BASECSS?>/styleValidasiMessageMhs.css">
+    <link rel="stylesheet" href="<?= BASECSS?>admin/global.css">
+    <link rel="stylesheet" href="<?= BASECSS?>admin/agenda.css">
+    <link rel="stylesheet" href="<?= BASECSS?>admin/leaderboard.css">
+    <link rel="stylesheet" href="<?= BASECSS?>admin/fitur.css">
 </head>
 <body>
     <div class="container">
@@ -21,8 +19,11 @@
             <h1 class="teks">
                 IPP<span class="highlight">MA</span>
             </h1>
+            <div class="bell">
+                <a href="validasiPrestasi_Mhs.php"><img src="../img/Notification_Icon.png" alt="Notification"></a>
+            </div>
             <div class="logout">
-            <button onclick="window.location.href='<?= BASEURL ?>/login/logout'">Logout</button>
+                <button onclick="window.location.href='../login.php';">Logout</button>
             </div>
         </header>
         <div class="main">
@@ -31,25 +32,30 @@
                     <img src="<?=BASEIMG?>/profil.png" alt="Profile" class="profile-img">
                     <h3 class="profile-name"><?=$data['namaMhs']?></h3>
                     <p class="profile-name"><?=$data['NIM']?></p>
+                    <p class="profile-name">TEKNIK INFORMASI</p>
                 </div>
                 <nav class="menu">
                     <a href="<?=BASEURL?>/mahasiswa/beranda" class="menu-item"> 
                         <img src="<?=BASEIMG?>/Beranda_Icon.png" alt="Beranda Icon" class="menu-icon">Beranda
                     </a>
-                    <a href="<?=BASEURL?>/mahasiswa/profil" class="menu-item">
-                        <img src="<?=BASEIMG?>/Profile_Icon.png" alt="Profile Icon" class="menu-icon">Profile Mahasiswa
+                    <a href="<?=BASEURL?>/mahasiswa/profile_Mhs" class="menu-item">
+                        <img src="<?=BASEIMG?>/Profile_Icon.png" alt="Profile Icon" class="menu-icon">Profile
                     </a>
-                    <a href="<?=BASEURL?>/mahasiswa/input_prestasi" class="menu-item">
-                        <img src="<?=BASEIMG?>/Validasi_Icon.png" alt="Validasi Icon" class="menu-icon">Input Prestasi
+                    <a href="<?=BASEURL?>/mahasiswa/validasiPrestasi_Mhs" class="menu-item">
+                        <img src="<?=BASEIMG?>/Validasi_Icon.png" alt="Validasi Icon" class="menu-icon">Validasi Prestasi
                     </a>
-                    <a href="<?=BASEURL?>/mahasiswa/inputprestasi" class="menu-item">
-                        <img src="<?=BASEIMG?>/Validasi_Icon.png" alt="Validasi Icon" class="menu-icon">Cetak Prestasi
+                    <a href="<?=BASEURL?>/mahasiswa/cetakPrestasi_Mhs" class="menu-item">
+                        <img src="<?=BASEIMG?>/Cetak_Icon.png" alt="Cetak Icon" class="menu-icon">Cetak Prestasi
                     </a>
-                    <a href="<?=BASEURL?>/mahasiswa/validasiMessage_mahasiswa" class="menu-item">
-                        <img src="<?=BASEIMG?>/Validasi_Icon.png" alt="Validasi Icon" class="menu-icon">Bantuan
+                    <a href="<?=BASEURL?>/mahasiswa/bantuan_Mhs" class="menu-item">
+                        <img src="<?=BASEIMG?>/Help_Icon.png" alt="bantuan Icon" class="menu-icon">Bantuan
                     </a>
                 </nav>
                 <footer>
                     <p>© polinema.sch.id</p>
                 </footer>
             </aside>
+        </div>
+    </div>
+</body>
+</html>

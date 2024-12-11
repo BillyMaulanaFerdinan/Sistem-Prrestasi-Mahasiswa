@@ -1,66 +1,145 @@
-        <!-- Main Content -->
-        <div class="main-content">
-            <section class="welcome">
-                <h2>SELAMAT DATANG <?= $data['namaMhs']?></h2>
-            </section>
-            <div class="content">
-                <!-- Ranking Section -->
-                <div class="ranking">
-                    <h3>Ranking</h3>
-                    <div class="ranking-item">
-                        <span class="rank-number">1</span>
-                        <div class="rank-info">
-                            <p>Alvino Valerian</p>
-                            <p>234720221</p>
-                            <p>D-IV Teknik Informatika</p>
-                        </div>
-                        <span class="rank-score">98</span>
+<main class="main-content">
+    <div class="welcome">
+        <h2>SELAMAT DATANG <?= $data['namaMhs']?></h2>
+        <section class="agenda">
+            <div class="agenda-header">
+                <h2>Agenda Lomba Mahasiswa</h2>
+            </div>
+            <div class="agenda-list">
+                <div class="agenda-item">
+                    <h3>Nama Kompetisi</h3>
+                    <div class="agenda-item-content">
+                        <img class="time-icon" src="../img/time.png" alt="time">
+                        <p>22 November 2024</p>
                     </div>
-                    <div class="ranking-item">
-                        <span class="rank-number">2</span>
-                        <div class="rank-info">
-                            <p>Alvino Valerian</p>
-                            <p>234720220</p>
-                            <p>D-IV Teknik Informatika</p>
-                        </div>
-                        <span class="rank-score">95</span>
-                    </div>
-                    <div class="ranking-item">
-                        <span class="rank-number">3</span>
-                        <div class="rank-info">
-                            <p>Alvino Valerian</p>
-                            <p>234720207</p>
-                            <p>D-IV Teknik Informatika</p>
-                        </div>
-                        <span class="rank-score">90</span>
-                    </div>
-                    <div class="ranking-item">
-                        <span class="rank-number">4</span>
-                        <div class="rank-info">
-                            <p>Alvino Valerian</p>
-                            <p>234720204</p>
-                            <p>D-IV Teknik Informatika</p>
-                        </div>
-                        <span class="rank-score">88</span>
-                    </div>
+                    <a href="#">Link</a>
                 </div>
-
-                <!-- Agenda Section -->
-                <div class="agenda">
-                    <h3>Agenda Lomba</h3>
-                    <div class="agenda-item">
-                        <p>Nama Kompetisi</p>
-                        <p>22 Feb 2025</p>
-                        <a href="#" class="agenda-link">Link</a>
+                <div class="agenda-item">
+                    <h3>Nama Kompetisi</h3>
+                    <div class="agenda-item-content">
+                        <img class="time-icon" src="../img/time.png" alt="time">
+                        <p>22 November 2024</p>
                     </div>
-                    <div class="agenda-item">
-                        <p>Nama Kompetisi</p>
-                        <p>24 Feb 2025</p>
-                        <a href="#" class="agenda-link">Link</a>
+                    <a href="#">Link</a>
+                </div>
+                <div class="agenda-item">
+                    <h3>Nama Kompetisi</h3>
+                    <div class="agenda-item-content">
+                        <img class="time-icon" src="../img/time.png" alt="time">
+                        <p>22 November 2024</p>
                     </div>
+                    <a href="#">Link</a>
+                </div>
+                <div class="agenda-item">
+                    <h3>Nama Kompetisi</h3>
+                    <div class="agenda-item-content">
+                        <img class="time-icon" src="../img/time.png" alt="time">
+                        <p>22 November 2024</p>
+                    </div>
+                    <a href="#">Link</a>
+                </div>
+                <div class="agenda-item">
+                    <h3>Nama Kompetisi</h3>
+                    <div class="agenda-item-content">
+                        <img class="time-icon" src="../img/time.png" alt="time">
+                        <p>22 November 2024</p>
+                    </div>
+                    <a href="#">Link</a>
+                </div>
+                <div class="agenda-item">
+                    <h3>Nama Kompetisi</h3>
+                    <div class="agenda-item-content">
+                        <img class="time-icon" src="../img/time.png" alt="time">
+                        <p>22 November 2024</p>
+                    </div>
+                    <a href="#">Link</a>
                 </div>
             </div>
+        </section>
+        <div class="leaderboard-ranking">
+            <h3>Ranking</h3>
+            <div class="leaderboard-ranking-item">
+                <img src="../img/juara1.png" alt="juara1" class="leaderboard-rank-number">
+                <div class="leaderboard-rank-info">
+                    <p>Alvino Valerian</p>
+                    <p>234720221</p>
+                    <p>D-IV Teknik Informatika</p>
+                </div>
+                <span class="leaderboard-rank-score">98</span>
+            </div>
+            <div class="leaderboard-ranking-item">
+                <img src="../img/juara2.png" alt="juara2" class="leaderboard-rank-number">
+                <div class="leaderboard-rank-info">
+                    <p>Alvino Valerian</p>
+                    <p>234720220</p>
+                    <p>D-IV Teknik Informatika</p>
+                </div>
+                <span class="leaderboard-rank-score">95</span>
+            </div>
+            <div class="leaderboard-ranking-item">
+                <img src="../img/juara3.png" alt="juara3" class="leaderboard-rank-number">
+                <div class="leaderboard-rank-info">
+                    <p>Alvino Valerian</p>
+                    <p>234720207</p>
+                    <p>D-IV Teknik Informatika</p>
+                </div>
+                <span class="leaderboard-rank-score">90</span>
+            </div>
+            <div class="leaderboard-ranking-item">
+                <img src="../img/juara4.png" alt="juara4" class="leaderboard-rank-number">
+                <div class="leaderboard-rank-info">
+                    <p>Alvino Valerian</p>
+                    <p>234720204</p>
+                    <p>D-IV Teknik Informatika</p>
+                </div>
+                <span class="leaderboard-rank-score">88</span>
+            </div>
+            <div class="leaderboard-ranking-item">
+                <img src="../img/juara5.png" alt="juara5" class="leaderboard-rank-number">
+                <div class="leaderboard-rank-info">
+                    <p>Alvino Valerian</p>
+                    <p>234720204</p>
+                    <p>D-IV Teknik Informatika</p>
+                </div>
+                <span class="leaderboard-rank-score">87</span>
+            </div>
         </div>
+        <section id="features" class="features">
+            <h2>Fitur Utama</h2>
+            <div class="features-list">
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="../img/Leaderboard-page.png" alt="Leaderboard">
+                </div>
+                <h3>Leaderboard</h3>
+                <p>Jadilah yang terdepan! Fitur ini menampilkan peringkat prestasi Anda 
+                    secara real-time, memotivasi untuk terus meningkatkan performa.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="../img/InputPrestasi-page.png" alt="Input Prestasi">
+                </div>
+                <h3>Input Prestasi</h3>
+                <p>Catat setiap prestasi Anda dengan mudah! Jangan biarkan satu pun 
+                    prestasi anda tidak diketahui oleh orang lain </p>
+            </div>
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="../img/ValidasiInput-page.png" alt="Validasi Input">
+                </div>
+                <h3>Validasi Input</h3>
+                <p>Permudah proses validasi data prestasi mahasiswa! Fitur ini 
+                    memastikan setiap pencatatan prestasi yang diinput sudah akurat dan sesuai.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="../img/CetakPrestasi-page.png" alt="Cetak Prestasi">
+                </div>
+                <h3>Cetak Prestasi</h3>
+                <p>Hasilkan laporan prestasi resmi dari data yang telah diinput 
+                    dan divalidasi! Laporan ini siap digunakan sebagai dokumentasi akademik</p>
+            </div>
+            </div>
+        </section>
     </div>
-</body>
-</html>
+</main>
