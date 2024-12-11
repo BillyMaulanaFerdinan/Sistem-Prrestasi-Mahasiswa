@@ -5,6 +5,7 @@ class Mahasiswa extends Controller{
         $data['judul'] = 'Beranda';
         $data['namaMhs'] = $this->model('UserMahasiswa')->getData('nama_mhs');
         $data['NIM'] = $this->model('UserMahasiswa')->getData('id_mhs');
+        $data['agenda'] = $this->model('UserMahasiswa')->getAgenda();
         $this->view('templates/headMhs', $data);  
         $this->view('mahasiswa/beranda', $data);
           

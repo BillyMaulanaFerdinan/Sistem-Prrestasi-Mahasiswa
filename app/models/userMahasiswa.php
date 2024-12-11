@@ -23,8 +23,8 @@ class UserMahasiswa {
                 echo "Data pengguna tidak ditemukan.";
                 return null;
             }
-    } 
-}
+        } 
+    }
     public function getData($field) {
         $userData = $this->getUserMhs();
         if ($userData) {
@@ -38,5 +38,14 @@ class UserMahasiswa {
             return 'Pengguna tidak ditemukan'; // Alternatif jika tidak ada data
         }
     }
+
+    public function getAgenda() {
+        $query = "SELECT * FROM Agenda";
+        $this->db->query($query);
+        $result = $this->db->resultSet();
+    
+        return $result;
+    }
+    
 
 }

@@ -6,4 +6,4 @@ define('BASEIMG', 'http://localhost/Sistem_Prestasi_Mahasiswa/public/img');
 
 //Database
 define('DB_HOST', 'LAPTOP-M7D75T3I\SQLEXPRESS');
-define('DB_NAME', 'Presma');
+define('DB_NAME', 'PresmaNew');

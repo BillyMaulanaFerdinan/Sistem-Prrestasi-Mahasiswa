@@ -6,54 +6,20 @@
                 <h2>Agenda Lomba Mahasiswa</h2>
             </div>
             <div class="agenda-list">
-                <div class="agenda-item">
-                    <h3>Nama Kompetisi</h3>
-                    <div class="agenda-item-content">
-                        <img class="time-icon" src="../img/time.png" alt="time">
-                        <p>22 November 2024</p>
+                <?php if (!empty($data['agenda'])): ?>
+                <?php foreach ($data['agenda'] as $item): ?>
+                    <div class="agenda-item">
+                        <h3><?= htmlspecialchars($item['nama_agenda']) ?></h3>
+                        <div class="agenda-item-content">
+                            <img class="time-icon" src="<?=BASEIMG?>/time.png" alt="time">
+                            <p><?= htmlspecialchars($item['tanggal_agenda']) ?></p>
+                        </div>
+                        <a href="<?= $item['link'] ?>">Link</a>
                     </div>
-                    <a href="#">Link</a>
-                </div>
-                <div class="agenda-item">
-                    <h3>Nama Kompetisi</h3>
-                    <div class="agenda-item-content">
-                        <img class="time-icon" src="../img/time.png" alt="time">
-                        <p>22 November 2024</p>
-                    </div>
-                    <a href="#">Link</a>
-                </div>
-                <div class="agenda-item">
-                    <h3>Nama Kompetisi</h3>
-                    <div class="agenda-item-content">
-                        <img class="time-icon" src="../img/time.png" alt="time">
-                        <p>22 November 2024</p>
-                    </div>
-                    <a href="#">Link</a>
-                </div>
-                <div class="agenda-item">
-                    <h3>Nama Kompetisi</h3>
-                    <div class="agenda-item-content">
-                        <img class="time-icon" src="../img/time.png" alt="time">
-                        <p>22 November 2024</p>
-                    </div>
-                    <a href="#">Link</a>
-                </div>
-                <div class="agenda-item">
-                    <h3>Nama Kompetisi</h3>
-                    <div class="agenda-item-content">
-                        <img class="time-icon" src="../img/time.png" alt="time">
-                        <p>22 November 2024</p>
-                    </div>
-                    <a href="#">Link</a>
-                </div>
-                <div class="agenda-item">
-                    <h3>Nama Kompetisi</h3>
-                    <div class="agenda-item-content">
-                        <img class="time-icon" src="../img/time.png" alt="time">
-                        <p>22 November 2024</p>
-                    </div>
-                    <a href="#">Link</a>
-                </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>Belum ada agenda yang tersedia.</p>
+                <?php endif; ?>
             </div>
         </section>
         <div class="leaderboard-ranking">
