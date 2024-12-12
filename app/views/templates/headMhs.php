@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="<?=BASEIMG?>/logo_SIPPMA.png">
     <title>SIPPMA</title>
-    <link rel="stylesheet" href="<?= BASECSS?>admin/global.css">
-    <link rel="stylesheet" href="<?= BASECSS?>admin/agenda.css">
-    <link rel="stylesheet" href="<?= BASECSS?>admin/leaderboard.css">
-    <link rel="stylesheet" href="<?= BASECSS?>admin/fitur.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/agenda.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/bantuan.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/cetakPrestasi.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/fitur.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/global.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/input.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/leaderboard.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/prestasi.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/printPrestasi.css">
+    <link rel="stylesheet" href="<?= BASECSS?>/profile.css">
 </head>
 <body>
     <div class="container">
